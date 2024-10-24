@@ -1,0 +1,144 @@
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    background-color: #041821;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Yeseva One', serif;
+    top: 20px;
+    left: 10px;
+}
+
+main {
+    padding-left: 10%;
+    padding-right: 5%;
+}
+.grey {
+    color: #808080
+}
+.white {
+    color: white;
+}
+.margin_head {
+    border-bottom: 2px solid grey;
+    color: white;
+}
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.logo span {
+    margin: 0 10px;
+}
+.portrait {
+    background-color: #1bd79e;
+    color: #e5e5e5;
+    font-size: 130%;
+}
+.green {
+    color: #1bd79e;
+}
+
+.main_txt {
+    font-size: 200%;
+}
+.txt_lambda {
+    font-size: 100%; 
+}
+.theme_button {
+    text-align: center;
+    background-color: #041821 !important;
+    border: none;
+    padding: 2%;
+    color: #e5e5e5;
+    font-family: 'Yeseva One';
+    font-size: 130%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5em;
+}
+
+.grid img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.grid img:nth-child(n + 10) {
+  display: none;
+}
+
+
+/* Format tablette */
+@media screen and (min-width: 768px) {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+  main {
+    width: 80%;
+    margin: auto;
+}
+
+  main h2 {
+    font-size: 3em;
+}
+
+  main nav {
+    justify-content: center;
+    gap: 1em;
+}
+
+  main nav button {
+    font-size: 0.75em;
+}
+
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+  .grid img:nth-child(n + 10) {
+    display: block;
+}
+
+  main p {
+    width: 80%;
+}
+}
+/* Format ordinateur */
+@media screen and (min-width: 1024px) {
+
+  main h2,
+  main p {
+    width: 60%;
+}
+
+  main nav button {
+    font-size: 1em;
+}
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+}
+.footer {
+    color: #808080;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.moyen {
+    font-size: 70%;
+}
+.petit {
+    font-size: 50%;
+}
